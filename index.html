@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f2e8cf;
+        }
+        header {
+            background-color: #bc4749;
+            color: #f2e8cf;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .container-carousel {
+            max-width: 700px;
+            margin-top: 20px;
+        }
+        .card {
+            z-index: 0;
+        }
+
+        footer {
+            height: 100px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #6a994e;
+            border-bottom: 2px solid #6a994e;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .h2-cards{
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+
+        .card-header {
+            background-color: #386641;
+            color: #f2e8cf;
+        }
+        .card-body {
+            background-color: #a7c957;
+            color: #386641;
+        }
+        .card-footer {
+            background-color: #386641;
+            color: #f2e8cf;
+        }
+
+        .color-x {
+            color: #f2e8cf;
+        }
+
+        .bgcolor-x {
+            background-color: #bc4749;
+        }
+
+    </style>
+    <title>Ex Bootstrap Kako Fleith</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Cachorritos</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link color-x" href="#carousel">Carousel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-x" href="#cards">Cards</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container container-carousel" id="carousel">
+        <h2>Carrosel de Imagens</h2>
+        <div id="carousel-fotos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="imgCarousel d-block w-100" src="https://cdn.pixabay.com/photo/2019/07/23/13/51/shepherd-dog-4357790_1280.jpg" />
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="imgCarousel d-block w-100" src="https://cdn.pixabay.com/photo/2019/04/10/23/51/animal-4118585_960_720.jpg" />
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="imgCarousel d-block w-100" src="https://cdn.pixabay.com/photo/2019/11/18/00/38/dog-4633734_1280.jpg" />
+                </div>
+            </div>
+            <button data-bs-target="#carousel-fotos" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-fotos" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+    </div>
+    <div class="container text-center containerCards" id="cards">
+        <h2 class="h2-cards">Cards</h2>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 col-md-6 mt-lg-4 mt-2">
+                <article class="card">
+                    <header class="card-header">
+                        Cachorro 1
+                    </header>
+                    <img src="https://cdn.pixabay.com/photo/2018/05/11/08/11/dog-3389729_1280.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Conheça sobre a raça</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt totam officiis et! Debitis minus fuga molestiae. Placeat tenetur illum, sapiente senon culpa?
+                        </p>
+                        <a href="#" class="btn btn-danger bgcolor-x">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        <p>Espero que goste meu nobre :D</p>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6 mt-lg-4 mt-2">
+                <article class="card">
+                    <header class="card-header">
+                        Cachorro 2
+                    </header>
+                    <img src="https://cdn.pixabay.com/photo/2023/08/18/15/02/dog-8198719_1280.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Conheça sobre a raça</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt totam officiis et! Debitis minus fuga molestiae. Placeat tenetur illum, sapiente senon culpa?
+                        </p>
+                        <a href="#" class="btn btn-danger bgcolor-x">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        <p>Espero que goste meu nobre :D</p>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6 mt-lg-4 mt-2">
+                <article class="card">
+                    <header class="card-header">
+                        Cachorro 3
+                    </header>
+                    <img src="https://cdn.pixabay.com/photo/2021/08/21/19/39/greyhound-6563435_1280.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Conheça sobre a raça</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt totam officiis et! Debitis minus fuga molestiae. Placeat tenetur illum, sapiente senon culpa?
+                        </p>
+                        <a href="#" class="btn btn-danger bgcolor-x">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        <p>Espero que goste meu nobre :D</p>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
